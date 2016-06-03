@@ -41,7 +41,7 @@ If a code file does not begin with a top-level module declaration or a namespace
     If you have multiple modules in a file, you must use a local module declaration for each module. If an enclosing namespace is declared, these modules are part of the enclosing namespace. If an enclosing namespace is not declared, the modules become part of the implicitly created top-level module. The following code example shows a code file that contains multiple modules. The compiler implicitly creates a top-level module named **Multiplemodules**, and **MyModule1** and **MyModule2** are nested in that top-level module.
 
 [!code-fsharp[Main](snippets/fsmodules/snippet6603.fs)]
-    If you have multiple files in a project or in a single compilation, or if you are building a library, you must include a namespace declaration or module declaration at the top of the file. The F# compiler only determines a module name implicitly when there is only one file in a project or compilation command line, and you are creating an application.
+If you have multiple files in a project or in a single compilation, or if you are building a library, you must include a namespace declaration or module declaration at the top of the file. The F# compiler only determines a module name implicitly when there is only one file in a project or compilation command line, and you are creating an application.
 
 The *accessibility-modifier* can be one of the following: **public**, **private**, **internal**. For more information, see [Access Control &#40;F&#35;&#41;](Access-Control-%5BFSharp%5D.md). The default is public.
 
